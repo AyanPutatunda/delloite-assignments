@@ -14,7 +14,6 @@ def get_files(path):
         res(str):The file name in the folder.
     """
     res = os.listdir(path)
-    print(res)
     return res
    
 def ingest_excel_file_pandas(excel_file_name):
