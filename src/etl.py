@@ -63,7 +63,6 @@ def load_data_to_postgres(df_to_ingest,connection_string):
     Returns:
         data_to_transform(pandas dataframe):The pandas dataframe post transformation.
     """
-    # engine = create_engine('postgresql://postgres:password@database-1.cgvdfgv8p3kj.us-west-1.rds.amazonaws.com:5432/postgres')
     engine = create_engine(connection_string)
     df_to_ingest.to_sql('ayan_test', engine, if_exists='replace')
     print('Data ingested in postgres successfully.....')
