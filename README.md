@@ -34,3 +34,6 @@ delloiteassignments_1  | Data from  excel file has been loaded to pandas datafra
 delloiteassignments_1  | Data is pandas dataframe has been transformed.....
 delloiteassignments_1  | Data ingested in postgres successfully.....
 ```
+The data load can be verified by logging into the AWS provisioned postgresql  database and executing the following query : 
+
+> SELECT * FROM public.ayan_test;
